@@ -1,0 +1,71 @@
+<html>
+<title> OVERALL GRADE </title>
+</head>
+<body>
+<h3 style="border:5px solid red; color:blue; height:30px; width:180px; float:left;background-color:yellow; "
+id="caldate"> Date today </h3>
+
+<script LANGUAGE = "Javascript" type="text/javascript">
+document.write("<br><br><br><br>"+"Today's Data: "+Date());
+document.getElementById("caldate").innerHTML = new Date().toDateString(); 
+
+
+
+var stname; 
+	var stid; 
+	var mid;
+	var final; 
+	var proj; 
+	var OveralGrade;
+document.write("<br><br><br><br>");
+stname=prompt("Enter Student Name?");
+document.write("Student Name:  "+stname);
+
+document.write("<br>")
+
+stid=prompt("Enter Student Id:");
+document.write("Student ID: "+stid);
+
+document.write("<br>")
+
+mid=prompt("Midterm grade point?");
+document.write("Midterm Grade Point:  "+mid);
+
+document.write("<br>")
+
+final=prompt("Final grade point?");
+document.write("Final Grade Point:  "+final);
+
+document.write("<br>")
+
+proj=prompt("Project grade point?");
+document.write("Project Grade Point:  "+proj);
+
+OveralGrade = 0.3 * mid + 0.50 * final + 0.20 * proj;
+
+if (OveralGrade< 50)
+{
+	document.write("<h2><font color=blue> Overall Grade: F </font> ");
+}
+else if(OveralGrade < 65)
+{
+	document.write("<h2><font color=blue> Overall Grade: D </font> ");
+}
+else if(OveralGrade < 80)
+{
+	document.write("<h2><font color=blue> Overall Grade: C </font> ");
+}
+
+else if(OveralGrade < 90)
+{
+     document.write("<h2><font color=blue> Overall Grade: B </font> ");
+}
+
+else document.write("<h2><font color=blue> Overall Grade: A </font> ");
+	
+
+</script>
+
+<img src="pic.png" float="left" width="200" height="200" alt="Grade Picture">
+</body>
+</html>
